@@ -1,8 +1,3 @@
-# Propósito
-
-- [ ] O que são bancos de dados;
-- [ ] Identificar as características de banco de dados relacionais e não-relacionais;
-
 ## Pré-requisitos
 
 Quais são os softwares necessários para a aula?
@@ -10,7 +5,14 @@ Quais são os softwares necessários para a aula?
 - [ ] SQL Server
 - [ ] Azure Data Studio
 
-## Apresentação
+## Propósito
+
+- [ ] O que são bancos de dados;
+- [ ] Identificar as características de banco de dados relacionais e não-relacionais;
+
+## Apresentação & Contextualização
+
+Contextualizar em um contexto sobre o todo.
 
 bd.pdf
 
@@ -20,8 +22,8 @@ shopping.sql
 
 ## Exercícios
 
+Pasta: Exercícios
 
-
-## Referências
+## Referências de conteúdos extras
 
 https://hstrada.vercel.app/blog/post/o-que-sao-bancos-de-dados
