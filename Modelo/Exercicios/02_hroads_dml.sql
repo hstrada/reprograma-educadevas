@@ -1,0 +1,86 @@
+USE SENAI_HROADS;
+
+INSERT INTO TIPOS_HABILIDADES (NOME)
+VALUES ('Ataque'), ('Defesa'), ('Cura'), ('Magia');
+
+SELECT * FROM TIPOS_HABILIDADES ORDER BY ID;
+
+/*
+TIPOS_HABILIDADES
+1	Ataque
+2	Defesa
+3	Cura
+4	Magia
+*/
+
+INSERT INTO HABILIDADES (NOME, ID_TIPO_HABILIDADE)
+VALUES	('Lança Mortal', 1)
+		,('Escudo Supremo', 2)
+		,('Recuperar Vida', 3);
+
+SELECT * FROM HABILIDADES ORDER BY ID;
+
+/*
+HABILIDADES
+1	Lança Mortal	1
+2	Escudo Supremo	2
+3	Recuperar Vida	3
+*/
+
+INSERT INTO CLASSES (NOME)
+VALUES	('Bárbaro')
+		,('Cruzado')
+		,('Caçador de Demônios')
+		,('Monge')
+		,('Necromante')
+		,('Feiticeiro')
+		,('Arcanista');
+
+SELECT * FROM CLASSES ORDER BY ID;
+
+/*
+CLASSES
+1	Bárbaro
+2	Cruzado
+3	Caçador de Demônios
+4	Monge
+5	Necromante
+6	Feiticeiro
+7	Arcanista
+*/
+
+INSERT INTO CLASSES_HABILIDADES (ID_CLASSE, ID_HABILIDADE)
+VALUES	 (1,1)
+		,(1,2)
+		,(2,2)
+		,(3,1)
+		,(4,2)
+		,(4,3)
+		,(6,3);
+
+SELECT * FROM CLASSES_HABILIDADES ORDER BY ID_CLASSE;
+
+/*
+CLASSES_HABILIDADES
+1	1
+1	2
+2	2
+3	1
+4	2
+4	3
+6	3
+*/
+
+INSERT INTO PERSONAGENS (NOME, CAP_MAX_VIDA, CAP_MAX_MANA, DT_CRIACAO, DT_ATUALIZACAO, ID_CLASSE)
+VALUES	('DeuBug', 100, 80, '18/01/2019', GETDATE(), 1)
+		,('BitBug', 70, 100, '17/03/2016', GETDATE(), 1)
+		,('Fer8', 75, 60, '18/03/2018', GETDATE(), 1);
+
+SELECT * FROM PERSONAGENS ORDER BY ID;
+
+/*
+PERSONAGENS
+1	DeuBug	100	80	2019-01-18 00:00:00.000	2019-02-02 17:29:50.170	1
+2	BitBug	70	100	2016-03-17 00:00:00.000	2019-02-02 17:29:50.170	4
+3	Fer8	75	60	2018-03-18 00:00:00.000	2019-02-02 17:29:50.170	7
+*/
