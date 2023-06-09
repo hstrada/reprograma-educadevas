@@ -23,6 +23,7 @@ shopping.sql
 ## Exercícios
 
 Pasta: Exercícios
+Como entregar o exercício, onde entregar, quais os critérios requeridos, quais os critérios opcionais.
 
 ## Referências de conteúdos extras
 
